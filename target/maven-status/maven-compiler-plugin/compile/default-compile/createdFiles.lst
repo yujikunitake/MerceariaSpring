@@ -1,0 +1,4 @@
+com/exemplo/produtoapp/model/Produto.class
+com/exemplo/produtoapp/controller/ProdutoController.class
+com/exemplo/produtoapp/ProdutoAppApplication.class
+com/exemplo/produtoapp/repository/ProdutoRepository.class

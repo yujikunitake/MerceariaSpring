@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Lista de Produtos da Mercearia</title></head>
+<body>
+<h1>Lista de Produtos Cadastrados na Mercearia do Douglinhas</h1>
+<table border="1">
+    <tr><th>ID</th><th>Nome</th><th>Descrição</th><th>Preço</th></tr>
+    <tr th:each="produto : ${produtos}">
+        <td th:text="${produto.id}"></td>
+        <td th:text="${produto.nome}"></td>
+        <td th:text="${produto.descricao}"></td>
+        <td th:text="${produto.preco}"></td>
+    </tr>
+</table>
+<a th:href="@{/produtos/novo}">Cadastrar novo produto</a>
+</body>
+</html>
